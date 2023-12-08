@@ -49,6 +49,6 @@ app.get('/orders', (req,res) => {
 
 
 
-app.listen(10000, function () {
-console.log("Started application on port %d", 10000)
+app.listen(80, function () {
+console.log("Started application on port %d", 80)
 });
