@@ -15,10 +15,10 @@ var con = mysql.createConnection({
     database: "bookdata"
 });
 
-con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-});
+//con.connect(function(err) {
+//    if (err) throw err;
+//    console.log("Connected!");
+//});
 
 
 app.get('/', (req, res) => { 
