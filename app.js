@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname+'/public'));
-
+/*
 var con = mysql.createConnection({
     host: "bookapp-db.cc0gr0xh7wq6.us-east-1.rds.amazonaws.com",
     user: "admin",
@@ -19,12 +19,12 @@ var con = mysql.createConnection({
 //    if (err) throw err;
 //    console.log("Connected!");
 //});
-
+*/
 
 app.get('/', (req, res) => { 
     res.sendFile(__dirname + '/index.html');
 }); 
-   
+/*   
 app.post('/submit', (req, res) => { 
     const id = req.body.id; 
     const name = req.body.name;
@@ -45,7 +45,7 @@ app.get('/orders', (req,res) => {
     
 });
 
-
+*/
 
 
 
